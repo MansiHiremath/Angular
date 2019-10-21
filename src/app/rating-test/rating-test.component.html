@@ -1,0 +1,8 @@
+<p>rating-test works!</p>
+<h3>Your rating is</h3>
+<ngb-rating [(rate)]="currentRating" [max]="20" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly"></ngb-rating>
+<h3>Viewer rating{{currentRating}}</h3>
+<h3>Hovered{{hovered}}</h3>
+<button class="btn btn-sm btn-outline-{{readonly ? 'danger' : 'success'}}" (click)= "readonly=!readonly">
+    {{readonly ? "readonly":"editable"}}
+</button>

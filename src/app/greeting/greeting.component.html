@@ -1,0 +1,37 @@
+
+<h3 class="text-color text-bkcolor">
+{{msg}}
+</h3>
+<h3 [class]="textColor">{{msg}}</h3>
+<button (click)="sayGreet($event)">Greet</button>
+
+<h3 [ngClass]="['text-color text-bkcolor']">
+    {{msg}}
+</h3>
+
+<h3 [ngClass]="['textColor textBkColor']">
+        {{msg}}
+    </h3>
+    
+    <h3 [ngClass]="greetingStyle">
+{{msg}}
+    </h3>
+
+    <h3 [ngStyle]="{'color':'red','background-color':'blue'}">{{msg}}</h3>
+<h1  [ngStyle]="{'color':fgColor(),'background-color':bgColor()}">Happy Diwali</h1>
+<button class="btn btn-primary" (click)="toggleColor()">Toggle</button>
+<h3 class="text-color text-bkcolor">
+    {{msg|uppercase}}
+    </h3>
+    <h3 class="text-color text-bkcolor">
+        {{msg|lowercase}}    
+        </h3>
+        <h3 class="text-color text-bkcolor">
+            {{msg|titlecase}}    
+            </h3>
+            <h3>
+                {{msg |reverseTest}}
+            </h3>
+            <h2 appColor>{{msg}}</h2>
+
+    
